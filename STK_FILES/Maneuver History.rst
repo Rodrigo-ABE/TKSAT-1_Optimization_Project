@@ -1,0 +1,688 @@
+stk.v.9.0
+WrittenBy    STK_v9.2.2
+
+BEGIN ReportStyle
+
+BEGIN ClassId
+	Class		Satellite
+END ClassId
+
+BEGIN Header
+	StyleType		0
+	Date		Yes
+	Name		Yes
+	DescShort		No
+	DescLong		No
+	YLog10		No
+	Y2Log10		No
+	VerticalGridLines		No
+	HorizontalGridLines		No
+	AnnotationType		Spaced
+	NumAnnotations		3
+	NumAngularAnnotations		5
+	AnnotationRotation		1
+	BackgroundColor		#ffffff
+	ForegroundColor		#000000
+	ViewableDuration		3600.000000
+	RealTimeMode		No
+	DayLinesStatus		1
+	LegendStatus		1
+	LegendLocation		1
+
+BEGIN PostProcessor
+	Destination	0
+	Use	0
+	Destination	1
+	Use	0
+	Destination	2
+	Use	0
+	Destination	3
+	Use	0
+END PostProcessor
+	NumSections		1
+END Header
+
+BEGIN Section
+	Name		Section 1
+	ClassName		Satellite
+	NameInTitle		No
+	ExpandMethod		0
+	PropMask		770
+	ShowIntervals		No
+	NumIntervals		0
+	NumLines		1
+
+BEGIN Line
+	Name		Line 1
+	NumElements		16
+
+BEGIN Element
+	Name		Time
+	IsIndepVar		Yes
+	IndepVarName		Time
+	Title		Time
+	NameInTitle		No
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Time
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		2
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-DeltaV
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		DeltaV
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		DeltaV
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Inertial_DeltaV_Magnitude
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Inertial_DeltaV_Magnitude
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Inertial_DeltaV_Magnitude
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Inertial_DeltaVx
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Inertial_DeltaVx
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Inertial_DeltaVx
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Inertial_DeltaVy
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Inertial_DeltaVy
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Inertial_DeltaVy
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Inertial_DeltaVz
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Inertial_DeltaVz
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Inertial_DeltaVz
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Delta_Vx_Tanget
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Delta_Vx_Tanget
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Delta_Vx_Tanget
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Delta_Vy_Normal
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Delta_Vy_Normal
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Delta_Vy_Normal
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Delta_Vz_Radial
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Delta_Vz_Radial
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Delta_Vz_Radial
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		4
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		No
+BEGIN Units
+		DistanceUnit		Meters
+		TimeUnit		Seconds
+		DateFormat		EpochSeconds
+		AngleUnit		Radians
+		MassUnit		Kilograms
+		PowerUnit		Watts
+		FrequencyUnit		Hertz
+		SmallDistanceUnit		Meters
+		LatitudeUnit		Radians
+		LongitudeUnit		Radians
+		DurationUnit		Seconds
+		Temperature		Kelvin
+		SmallTimeUnit		Seconds
+		RatioUnit		Units
+		RcsUnit		SquareMeters
+		DopplerVelocityUnit		MetersperSecond
+		SARTimeResProdUnit		Meter-Second
+		ForceUnit		Newtons
+		PressureUnit		Pascals
+		SpecificImpulseUnit		Seconds
+		PRFUnit		Hertz
+		BandwidthUnit		Hertz
+		SmallVelocityUnit		MetersperSecond
+		Percent		UnitValue
+		SolidAngle		Steradians
+		SpectralBandwidthUnit		Hertz
+		BitsUnit		Bits
+		MagneticFieldUnit		Tesla
+END Units
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-FuelMass
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		FuelMass
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		FuelMass
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		8
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Fuel_Density
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Fuel_Density
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Fuel_Density
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		35
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Specific_Impulse
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Specific_Impulse
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Specific_Impulse
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		32
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Tank_Pressure
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Tank_Pressure
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Tank_Pressure
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		31
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Tank_Temperature
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Tank_Temperature
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Tank_Temperature
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		22
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Total_Mass
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Total_Mass
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Total_Mass
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		8
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+
+BEGIN Element
+	Name		Astrogator Maneuver Ephemeris Block History-Maneuver-Total_Mass_Flow_Rate
+	IsIndepVar		No
+	IndepVarName		Time
+	Title		Total_Mass_Flow_Rate
+	NameInTitle		Yes
+	Service		AstrogatorSegmentHistory
+	Type		Maneuver
+	Element		Total_Mass_Flow_Rate
+	SumAllowedMask		23
+	SummaryOnly		No
+	DataType		0
+	UnitType		42
+	LineStyle		0
+	LineWidth		0
+	LineColor		#000000
+	PointStyle		0
+	PointSize		0
+	FillPattern		0
+	FillColor		#000000
+	PropMask		0
+	UseScenUnits		Yes
+END Element
+END Line
+END Section
+
+BEGIN LineAnnotations
+END LineAnnotations
+END ReportStyle
+
